@@ -6,15 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+          .links{
+              border: 1px solid black 
+          }
+          
+          .links li:nth-child(2){
+            margin-right: 75%;
+        }
+
+        li{
+            display: inline;
+            margin: 15px 15px;
+        }
+
+        #links:nth-child(2) {
+            margin-inline-end: 300px;
+        }
+
+        img{
+            /* display: inline-block; */
+            margin-top: 100px;
+            padding: 10;
+            height: 92px;
+            width: 272px;
+            
+        }
+
+        input {
+            margin-top: 30px;
+            width: 400px;
+            height: 40px;
+            text-align: start;
+        }
+
+        button {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 10px;
+            border: 0px;
+        }
+
+        .footer:nth-child(3) {
+            margin-block-end: 100px;
+            font-size: small;
+            margin-right: 75%;
+        }
+
+        .ftr {
+            margin-top: 100px;
+            text-align: left;
+            background-color: whitesmoke;
+            padding: 2px;
+        }
+
+        div{
+            text-align: center;
+        }
+
+        #pic{
+            text-align: center;
+        }
+        .footer{
+            margin-top: 300px;
+           
+            
+        }
+
+
 
     </style>
 </head>
 <body>
-    <div id="nav">
+    <div class="links">
+        <ul>
+            <li>
+                <a href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header">About</a>
+
+            </li>
+
+            <li>
+                <a href="https://store.google.com/CA?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA">Store</a>
+                
+            </li>
+
+            <li><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a></li>
+            <li><a href="https://www.google.ca/imghp?hl=en&ogbl">Images</a></li>
+           
+        </ul>
+        
 
         
     </div>
-    <div id="content"></div>
-    <div id="footer">1234</div>
+    <div id="pic">
+        <img src="/google image.png" alt=""> <br>
+        <input type="search"> <br>
+        <a href="#"><button>Google Search</button></a> <a href="#"><button>I'm Feeling Lucky</button></a>
+    </div>
+    <div class="ftr">
+        
+        <p>Canada</p>
+
+    </div>
+    <div class="footer">
+        <ul>
+            
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>How Search Works</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+            
+        </ul>
+    </div>
+    
+      
+        
 </body>
 </html>
