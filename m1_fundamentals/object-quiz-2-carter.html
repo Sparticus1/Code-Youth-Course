@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+// 1.
+// Write an object that has two objects inside it named "test0" and "test1"
+// inside both objects write the keys "testName", "numParticipants", and "testPass"
+// fill the values as you want with testName being a string, numParticipants being a number, and testResult being a boolean
+    
+    
+   let test = {
+
+    test0:{
+     testName:"Object Test",  
+     numParticipants:"24",
+     testPass: true
+    
+    }, 
+    
+    test1: {
+        testName:"Object Test 2",
+        numParticipants:"30",
+        testPass: false
+    }
+
+    
+    }
+
+
+    for (let key in test)
+        if(test[key]["testPass"] == true){
+            console.log(test[key]["testName"])
+            console.log(test[key]["numParticipants"])
+            console.log(test[key]["testPass"])
+        }
+        
+    for (let key in test1){
+        if(test[key]["testPass"] == true){
+            console.log(test[key]["testName"])
+            console.log(test[key]["numParticipants"])
+
+    }
+   
+   
+   
+   
+   
+   
+   
+    }    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
