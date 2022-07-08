@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   
+
+        <h1>Question 1</h1>
+    
+        <p id="paraId"> This is paragraph 1</p>
+        <p class="paraClass"> This is paragraph 2</p>
+    
+        <script>
+              
+              console.log(document.getElementById("paraId"))
+              console.log(document.getElementsByClassName("paraClass")[0])
+      
+        </script>
+    
+    
+   
+   
+   
+   
+   
+    <h3>
+        <!-- Question 2: Create an empty p tag with some text than change the text
+        color to blue, select is using query selector -->
+       </h3>
+
+       <h1>Question 2</h1>
+       <p class="style">This is the answer to number two</p>
+
+       <script>
+        function change(){
+            const blue = document.querySelector(".style");
+            blue.style.color="blue"
+        }
+        change()
+       </script>
+
+  
+</body>
+</html>
