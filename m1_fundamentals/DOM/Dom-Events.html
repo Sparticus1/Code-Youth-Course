@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Welcome to Code Youth </h1>
+    <p id = "gry">This will change grey when clicked on</p>
+    <button onclick  = "change()">Change</button>
+    <!-- onmouseover(instead if inclick) for color change before clicking button -->
+
+    <script>
+        function change(){
+            document.querySelector('#head').style.color = "orange";
+
+
+        }
+    </script>
+
+    <h1 id = "tag">Hello World</h1>
+    <script>
+        document.getElementById("tag").addEventListener('mouseover', hover);
+        function hover(){
+            document.querySelector("#tag").style.color="purple"
+        }
+   
+   const gry = document.getElementById("gry");
+   gry.onclick = clickonfnct;
+   function clickonfnct() {
+    gry.style.backgroundColor = "grey"
+   }
+
+ </script>
+
+
+
+<!-- Create a button, change its text color white and background color black when double clicked—use any even handling way -->
+
+
+<!-- 
+/*
+Create a div 
+make its width 10rem; and its height 10rem and give it a border
+using event listeners change the background color to red when your mouse enters the div
+change the background color to white when your mouse leaves the div
+*/ -->
+
+
+
+
+</body>
+<button id = "bttn">Click</button>
+
+
+
+</html>
