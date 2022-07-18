@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Question 1: Create a form with a username input and then get the value
+      typed in when form is submitted. Console log the value -->
+
+      <!-- Step:1 -->
+      <form id = "form1">
+        <input type="text" name="user" >
+    
+      </form>
+
+      <script>
+        // Step 2: Creatung reference to step 1
+        const form1  =  document.getElementById("form1")
+        console.log(form1);
+
+        // Step 3: Add event listender to form
+        form1.addEventListener("submit", function add(e){
+            e.preventDefault()
+            console.log(form1.user.value)
+
+        })
+      </script>
+
+
+    
+</body>
+</html>

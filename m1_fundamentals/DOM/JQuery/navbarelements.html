@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navBar{
+            color:white;
+            background-color: grey;
+        }
+        #navBar p{
+            display: inline-block;
+        }
+
+        p{
+            margin: 5px 100px 10px 0px;
+            padding: 3px;
+        }
+
+        .navcol{
+            background-color: green !important;
+        }
+
+    </style>
+   
+
+</head>
+<body>
+    <div id="navBar">
+        <p>home</p>
+        <p>images</p>
+        <p>maps</p>
+        <p>about</p>
+        <p>contacts</p>
+    </div>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    
+    
+    <script>
+        $(document).ready(function() {
+            $("p").mouseover(function (e) {
+                console.log(e.currentTarget)
+                $(e.currentTarget).css("background", "black")
+            })
+            $("p").click(function (e){
+                $(e.currentTarget).addClass("navcol")
+            })
+        })
+        {
+            $("p").mouseout(function () {
+                $("p").css("background", "initial")
+            })
+        }
+    </script>
+    
+</body>
+</html>
