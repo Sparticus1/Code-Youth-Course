@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const par = document.createElement("h1");
+        par.innerHTML="My DOM Question :)";
+        document.body.appendChild(par)
+    </script>
+
+<ul class="evilList">
+    <li>Cheese</li>
+    <li>Orange</li>
+    <li>Flowers</li>
+</ul>
+
+
+<script>
+    const list = document.createElement("li")
+    list.innerHTML = "Bacon"
+    const evilList = document.getElementsByClassName("evilList")
+    evilList[0].appendChild(list)
+    const list1 = document.createElement("li")
+    list1.innerHTML = "Eggs"
+    evilList[0].appendChild(list1)
+
+</script>
+
+<table border="1">
+    <tr class="headerRow">
+        <th>Length</th>
+        <th>Width</th>
+        <th>Area</th>
+    </tr>
+</table>
+
+<script>
+    const row1 = document.createElement("tr")
+    const th1 = document.createElement("th")
+    const th2 = document.createElement("th")
+    const th3 = document.createElement("th")
+    th1.innerHTML = "5"
+    th2.innerHTML = "15"
+    th3.innerHTML = "30"
+    row1.appendChild(th1)
+    row1.appendChild(th2)
+    row1.appendChild(th3)
+    const tab = document.getElementsByTagName("table")[0]
+    tab.appendChild(row1)
+    const row2 = document.createElement("tr")
+    const th4 = document.createElement("th")
+    const th5 = document.createElement("th") nbv 
+    const th6 = document.createElement("th")
+    th4.innerHTML = "10"
+    th5.innerHTML = "30"
+    th6.innerHTML = "60"
+    row2.appendChild(th4)
+    row2.appendChild(th5)
+    row2.appendChild(th6)
+    tab.appendChild(row2)
+
+    
+
+
+
+
+
+</script>
+
+
+
+
+<!-- 
+3.
+Recreate the following html using DOM
+
+    <div class="loginDiv">
+        <form action="get">
+            <p>Please Sign in</p>
+            <input type="text" id="user">
+            <input type="password" id="pass">
+            <input type="submit" value="Sign in ->">
+        </form>
+    </div>
+*/ -->
+
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>event listeners</h1>
+
+    <h3>
+        Question 1: Create a button in html then using an event listener, log to the console "The button was pressed" when you click the button
+
+    <br>
+    <button class="btn1">Click</button>
+    </h3>
+    <h3>
+        Question 2: Create a button in html then using an event listener, change the text in the button when clicked
+    </h3>
+    <hr />
+    <button class="btn2">Click</button>
+
+
+    
+</body>
+<script>
+    //Step 1: Get reference to what you want to add an event to
+    const btn1 = document.querySelector(".btn1")
+    console.log(btn1)
+    //Step 2: Add an event listener, with the type of event (clicl)
+    btn1.addEventListener('click', function() {
+        //step 3: What happens when the event is activated
+        console.log("i have been clicked");
+    });
+
+
+    const btn2 = document.querySelector(".btn2");
+    btn2.addEventListener('click', function(e) {
+        console.log(e.target.innerText);
+        e.target.innerText = "unclick";
+
+    })
+</script>
+</html>
